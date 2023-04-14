@@ -2,7 +2,7 @@
   "tasks": [
     {
       "title": "Study Lesson",
-      "status": false,
+      "status": true,
       "image": "https://images2.imgbox.com/1f/88/DDVrvBXp_o.png",
       "background": "#DBECF6",
       "id": 1
@@ -10,7 +10,7 @@
     {
       "title": "Caminhada",
       "time": "1:00:00 PM",
-      "status": true,
+      "status": false,
       "image": "https://images2.imgbox.com/24/28/RZqEMuh0_o.png",
       "background": "#FEF5D3",
       "id": 2
@@ -18,7 +18,7 @@
     {
       "title": "Go to party",
       "time": "10:00:00",
-      "status": false,
+      "status": true,
       "image": "https://images2.imgbox.com/1f/88/DDVrvBXp_o.png",
       "id": 3
     },
@@ -29,6 +29,39 @@
       "image": "https://images2.imgbox.com/99/84/509wmiw1_o.png",
       "background": "#E7E2F3",
       "id": 4
+    },
+    {
+      "title": "Tarefa empresa",
+      "time": "13:00:00",
+      "status": false,
+      "image": "https://images2.imgbox.com/99/84/509wmiw1_o.png",
+      "background": "#E7E2F3",
+      "id": 5
+    },
+    {
+      "title": "Musculaçao",
+      "time": "10:00:00",
+      "status": true,
+      "image": "https://images2.imgbox.com/24/28/RZqEMuh0_o.png",
+      "background": "#FEF5D3",
+      "id": 6
+    },
+    {
+      "title": "Run 2k",
+      "time": "17:44:56",
+      "status": true,
+      "image": "https://images2.imgbox.com/24/28/RZqEMuh0_o.png",
+      "background": "#FEF5D3",
+      "id": 7
+    },
+    {
+      "title": "aaaaaaa",
+      "notes": "aaaaaaa",
+      "image": "https://images2.imgbox.com/1f/88/DDVrvBXp_o.png",
+      "status": true,
+      "time": "17:46:16",
+      "date": "14/04/2023",
+      "id": 8
     }
   ]
 }

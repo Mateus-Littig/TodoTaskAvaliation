@@ -6,6 +6,7 @@ import CheckBox from '@react-native-community/checkbox'
 import { List, ViewImage, ImageIcon, ListContainerText, TextBody, TextBodyTime, ListError, 
   ViewImageError, ListContainerTextError, TextBodyError, TextTimeError, Container,
   ContainerTitle, TextTime, TextTitle, ContainerList, TextComplete, ContainerListError } from './styles'
+import { useFocusEffect } from '@react-navigation/native'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import api from '../../services'
 import { Background } from '../../component/container'
@@ -16,6 +17,11 @@ export default function Home({ navigation }) {
   const [item, setItem] = useState([])
   const [itemFalse, setItemFalse] = useState([])
 
+  useFocusEffect(
+    React.useCallback(() => {
+      pushItem()
+    }, [])
+  )
   useEffect(() => {
     handleItem()
     pushItem()

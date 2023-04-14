@@ -19,7 +19,8 @@ export default function Tasks({ navigation }) {
   const [open, setOpen] = useState(false)
 
   const schema = yup.object().shape({
-    title: yup.string().max(15, 'Number of Characters Exceeded')
+    title: yup.string().max(15, '* Máximo de 15 caracteres'),
+    notes: yup.string().min(6, '* A senha deve conter pelo menos 6 digitos').required('Informe sua observação')
   })
   const { control, handleSubmit, formState: { errors } } = useForm({
     defaultValues: {
@@ -112,7 +113,7 @@ export default function Tasks({ navigation }) {
           />
         </ContainerDateTime>
         <InputNotes
-          name="note"
+          name="notes"
           placeholder="Notes"
           control={control}
           errors={errors}
