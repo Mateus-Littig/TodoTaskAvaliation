@@ -2,7 +2,7 @@
 import React from 'react'
 import { Container, ImgBack, ImgBackLow } from './styles'
 
-export function Background() {
+export function HeaderHome() {
   return (
     <Container>
       <ImgBack source={require('../../assets/iconGr.png')}/>

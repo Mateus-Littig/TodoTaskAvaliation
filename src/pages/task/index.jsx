@@ -9,7 +9,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 import { ButtonTask } from '../../component/touchTask'
 import { ButtonIcon } from '../../component/buttonIcon'
-import { BackgroundSmall } from '../../component/containerLow'
+import { HeaderTask } from '../../component/headerTask'
 import DatePicker from 'react-native-date-picker'
 import api from '../../services'
 
@@ -19,8 +19,8 @@ export default function Tasks({ navigation }) {
   const [open, setOpen] = useState(false)
 
   const schema = yup.object().shape({
-    title: yup.string().max(15, '* Máximo de 15 caracteres'),
-    notes: yup.string().min(6, '* A senha deve conter pelo menos 6 digitos').required('Informe sua observação')
+    title: yup.string().max(12, '* Máximo de 12 caracteres'),
+    notes: yup.string().min(6, '* As notas devem conter pelo menos 6 caracteres').required('Informe sua anotação')
   })
   const { control, handleSubmit, formState: { errors } } = useForm({
     defaultValues: {
@@ -70,8 +70,8 @@ export default function Tasks({ navigation }) {
   <TouchableWithoutFeedback
       onPress={() => Keyboard.dismiss()}>
     <Container>
-      <BackgroundSmall onPress={() => navigation.goBack()}>
-      </BackgroundSmall>
+      <HeaderTask onPress={() => navigation.goBack()}>
+      </HeaderTask>
       <ContainerText>
 
         <InputTitulo

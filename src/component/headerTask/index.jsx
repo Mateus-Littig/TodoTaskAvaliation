@@ -4,7 +4,7 @@ import React from 'react-native'
 import { Container, ImgBack, TextTitle, ButtonClose, CloseIconText, ImgBackLow } from './styles'
 
 
-export function BackgroundSmall({ onPress }) {
+export function HeaderTask({ onPress }) {
   return (
     <Container>
       <ImgBack source={require('../../assets/iconGr.png')}/>

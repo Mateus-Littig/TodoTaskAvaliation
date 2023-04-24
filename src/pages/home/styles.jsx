@@ -38,7 +38,6 @@ export const ContainerListError = styled.View`
   position: relative;
   background: ${Theme.colors.white[10]};
   width: 90%;
-  min-height: 25%;
   height: 30%;
   margin-left: auto;
   margin-right: auto;
@@ -139,7 +138,6 @@ export const ListContainerTextError = styled.View`
   margin-right: 20%;
   height: 80px;
   width: 40%;
-
 `
 
 export const TextBodyError = styled.Text`

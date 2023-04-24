@@ -9,7 +9,7 @@ import { List, ViewImage, ImageIcon, ListContainerText, TextBody, TextBodyTime, 
 import { useFocusEffect } from '@react-navigation/native'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import api from '../../services'
-import { Background } from '../../component/container'
+import { HeaderHome } from '../../component/headerHome'
 import { Button }  from '../../component/touchable'
 
 export default function Home({ navigation }) {
@@ -95,7 +95,7 @@ export default function Home({ navigation }) {
   return (
     <Container>
       <ContainerTitle>
-        <Background />
+        <HeaderHome />
         <TextTime>{data}</TextTime>
         <TextTitle>My Todo List</TextTitle>
       </ContainerTitle>
